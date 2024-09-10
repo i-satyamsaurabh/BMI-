@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+        integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <title>BMI Calculator</title>
+</head>
+
+<body>
+    <nav>
+
+    </nav>
+
+    <div class="title">
+        <h1>Welcome to BMI Calculator</h1>
+        <h3>Get your Body Mass Index in seconds!</h3>
+    </div>
+
+    <div class="input">
+        <form method="post" class="pure-form" action="/">
+            <input type="text" name="NAME" placeholder="Your Name (Required)">
+            <input type="number" name="AGE" placeholder="Your Age">
+            <input type="number" name="WEIGHT" placeholder="Weight in Kg">
+            <input type="number" name="HEIGHT" placeholder="Height in Cm">
+            <button type="submit" class="pure-button pure-button-primary">Submit</button>
+        </form>
+    </div>
+
+    <div class="jinja">
+        {% if NAME %}
+        <p>Your Body Mass Index (BMI) is '{{ BMI }}'</p>
+        <P class="SUGGESTION" style="font-size: small; color: darkviolet;"> "{{SUGGESTION}}"</P>
+        {% endif %}
+
+    </div>
+</body>
+
+</html>

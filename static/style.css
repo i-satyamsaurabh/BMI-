@@ -1,0 +1,42 @@
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+/* space */
+
+
+.title {
+    text-align: center;
+
+}
+
+h3 {
+    color: darkblue;
+}
+
+h1 {
+    color: #1100ff;
+    font-weight: bolder;
+}
+
+
+.jinja {
+    text-align: center;
+    margin-top: 40px;
+    width: 500px;
+    margin-left: 30vw;
+    font-weight: bold;
+    font-size: x-large;
+    border: 6px ridge rgba(211, 220, 50, .6);
+    border-radius: 35px;
+    background-color: rgb(216, 252, 240);
+    position: relative;
+}
+
+body {
+    background-color: rgb(253, 196, 196);
+    font-family: "Playfair Display";
+    text-align: center;
+}
+
+nav {
+    background-color: rgb(219, 242, 255);
+    height: 5vh;
+}
