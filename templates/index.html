@@ -4,15 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
         integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
     <title>BMI Calculator</title>
+    <style>
+        .navbar {
+            background-color: #f8f9fa;
+            /* Light grey background */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            /* Subtle shadow for depth */
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: #5a6268;
+            /* Soft dark color for brand */
+        }
+
+        .navbar-brand:hover {
+            color: #343a40;
+            /* Darker color on hover */
+        }
+
+        .nav-link {
+            color: #6c757d;
+            /* Muted link color */
+            font-size: 1.1rem;
+            /* Slightly larger font for emphasis */
+        }
+
+        .nav-link:hover {
+            color: #495057;
+            /* Darker color on hover */
+            border-bottom: 2px solid #495057;
+            /* Underline effect on hover */
+        }
+
+        .navbar-toggler {
+            border-color: #6c757d;
+            /* Muted color for the toggle border */
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(108, 117, 125, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+            /* Custom color for the hamburger icon */
+        }
+    </style>
 </head>
 
 <body>
-    <nav>
-
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">BMI Checker</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <div class="title">
@@ -37,6 +98,8 @@
         {% endif %}
 
     </div>
+
+
 </body>
 
 </html>
